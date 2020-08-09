@@ -1,0 +1,73 @@
+<sensor>
+	<tracker>Microsoft</tracker>
+	<mirrormode>true</mirrormode>
+	<smoothing>true</smoothing>
+	<smoothingfactor>0.5</smoothingfactor>
+	<correction>0.5</correction>
+	<prediction>0.5</prediction>
+	<jitter>0.05</jitter>
+	<deviation>0.04</deviation>
+</sensor>
+<server>
+	<transformations>Global coordinates</transformations>
+	<automaticassignment>true</automaticassignment>
+</server>
+<gestures>
+	<gesture name="Gesture 1" timeout="0">
+		<input type="2">
+			<descriptor>left leg</descriptor>
+			<descriptor>at most</descriptor>
+			<descriptor>5</descriptor>
+			<descriptor>degrees</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>press</descriptor>
+			<descriptor>1</descriptor>
+			<descriptor>for</descriptor>
+			<descriptor>3</descriptor>
+		</output>
+	</gesture>
+	<gesture name="Gesture 3" timeout="0">
+		<input type="2">
+			<descriptor>right leg</descriptor>
+			<descriptor>at most</descriptor>
+			<descriptor>5</descriptor>
+			<descriptor>degrees</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>press</descriptor>
+			<descriptor>1</descriptor>
+			<descriptor>for</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+	<gesture name="Gesture 3" timeout="0">
+		<input type="2">
+			<descriptor>right leg</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>45</descriptor>
+			<descriptor>degrees</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>press</descriptor>
+			<descriptor>2</descriptor>
+			<descriptor>for</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+	<gesture name="Gesture 4" timeout="0">
+		<input type="2">
+			<descriptor>right leg</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>45</descriptor>
+			<descriptor>degrees</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>press</descriptor>
+			<descriptor>2</descriptor>
+			<descriptor>for</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+</gestures>
+

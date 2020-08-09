@@ -1,0 +1,235 @@
+<sensor>
+	<tracker>Microsoft</tracker>
+	<mirrormode>true</mirrormode>
+	<smoothing>true</smoothing>
+	<smoothingfactor>0.5</smoothingfactor>
+	<correction>0.5</correction>
+	<prediction>0.5</prediction>
+	<jitter>0.05</jitter>
+	<deviation>0.04</deviation>
+</sensor>
+<server>
+	<transformations>Global coordinates</transformations>
+	<automaticassignment>true</automaticassignment>
+</server>
+<gestures>
+	<gesture name="Yaw Left" timeout="0">
+		<input type="0">
+			<descriptor>turn</descriptor>
+			<descriptor>left</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>15</descriptor>
+			<descriptor>degrees</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>hold</descriptor>
+			<descriptor>a</descriptor>
+			<descriptor>until complete</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+	<gesture name="Yaw Right" timeout="0">
+		<input type="0">
+			<descriptor>turn</descriptor>
+			<descriptor>right</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>15</descriptor>
+			<descriptor>degrees</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>hold</descriptor>
+			<descriptor>d</descriptor>
+			<descriptor>until complete</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+	<gesture name="Pitch Forward" timeout="0">
+		<input type="0">
+			<descriptor>lean</descriptor>
+			<descriptor>forward</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>10</descriptor>
+			<descriptor>degrees</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>hold</descriptor>
+			<descriptor>numpad_8</descriptor>
+			<descriptor>until complete</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+	<gesture name="Pitch Backward" timeout="0">
+		<input type="0">
+			<descriptor>lean</descriptor>
+			<descriptor>backward</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>5</descriptor>
+			<descriptor>degrees</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>hold</descriptor>
+			<descriptor>numpad_5</descriptor>
+			<descriptor>until complete</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+	<gesture name="Roll Left" timeout="0">
+		<input type="0">
+			<descriptor>lean</descriptor>
+			<descriptor>left</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>20</descriptor>
+			<descriptor>degrees</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>hold</descriptor>
+			<descriptor>numpad_4</descriptor>
+			<descriptor>until complete</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+	<gesture name="Roll Right" timeout="0">
+		<input type="0">
+			<descriptor>lean</descriptor>
+			<descriptor>right</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>20</descriptor>
+			<descriptor>degrees</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>hold</descriptor>
+			<descriptor>numpad_6</descriptor>
+			<descriptor>until complete</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+	<gesture name="Fire Weapon" timeout="0">
+		<input type="1">
+			<descriptor>left hand</descriptor>
+			<descriptor>in front of</descriptor>
+			<descriptor>torso</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>24</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<input type="1">
+			<descriptor>right hand</descriptor>
+			<descriptor>in front of</descriptor>
+			<descriptor>torso</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>24</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<output type="2">
+			<descriptor>hold</descriptor>
+			<descriptor>right button</descriptor>
+			<descriptor>until complete</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+	<gesture name="Eject" timeout="0">
+		<input type="1">
+			<descriptor>left hand</descriptor>
+			<descriptor>above</descriptor>
+			<descriptor>head</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>3</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<input type="1">
+			<descriptor>right hand</descriptor>
+			<descriptor>above</descriptor>
+			<descriptor>head</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>3</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>hold</descriptor>
+			<descriptor>f</descriptor>
+			<descriptor>for</descriptor>
+			<descriptor>0.5</descriptor>
+		</output>
+	</gesture>
+	<gesture name="Throttle Up" timeout="0">
+		<input type="1">
+			<descriptor>left elbow</descriptor>
+			<descriptor>above</descriptor>
+			<descriptor>waist</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>3</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<input type="1">
+			<descriptor>right hand</descriptor>
+			<descriptor>above</descriptor>
+			<descriptor>waist</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>3</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>hold</descriptor>
+			<descriptor>w</descriptor>
+			<descriptor>until complete</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+	<gesture name="Throttle Down" timeout="0">
+		<input type="1">
+			<descriptor>left elbow</descriptor>
+			<descriptor>above</descriptor>
+			<descriptor>waist</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>12</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<input type="1">
+			<descriptor>right elbow</descriptor>
+			<descriptor>above</descriptor>
+			<descriptor>waist</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>12</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<input type="1">
+			<descriptor>left hand</descriptor>
+			<descriptor>below</descriptor>
+			<descriptor>left elbow</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>3</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<input type="1">
+			<descriptor>right hand</descriptor>
+			<descriptor>below</descriptor>
+			<descriptor>right elbow</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>3</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>hold</descriptor>
+			<descriptor>s</descriptor>
+			<descriptor>until complete</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+	<gesture name="Landing Gear" timeout="0">
+		<input type="1">
+			<descriptor>right foot</descriptor>
+			<descriptor>above</descriptor>
+			<descriptor>left foot</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>12</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>hold</descriptor>
+			<descriptor>g</descriptor>
+			<descriptor>until complete</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+</gestures>
+
